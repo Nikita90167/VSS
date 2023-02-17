@@ -14,11 +14,11 @@ public class SalesManager {
         }
         return max;
     }
-    public int Calculation (int [] countSales) {
-        int count = 0;
-        int max = 0;
-        int min = countSales[0];
-        int countSum = 0;
+    public long Calculation (long [] countSales) {
+        long count = 0;
+        long max = 0;
+        long min = countSales[0];
+        long countSum = 0;
         for (int i = 0; i < countSales.length; i++) {
             if (countSales[i] > max) {
                 max = countSales[i];
@@ -29,7 +29,7 @@ public class SalesManager {
             count++;
             countSum += countSales[i];
         }
-        int CalculationResult = ((countSum - (max + min)) / count);
+        long CalculationResult = ((countSum - (max + min)) / count);
         return CalculationResult;
     }
 }
