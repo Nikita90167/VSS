@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int[] sale = {
+        long[] sale = {
                 6,
                 3,
                 5,
